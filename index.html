@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Brain Tumor Detection – Login</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <main class="surface">
+      <!-- Left hero -->
+      <section class="hero">
+        <div class="hero-tag">
+          <span class="hero-tag-dot"></span>
+          <span>AI-Assisted Brain Tumor Detection</span>
+        </div>
+
+        <h1 class="hero-title">
+          Secure access to your
+          <span class="hero-gradient">diagnostic workspace.</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Upload MRI scans, review AI predictions, and keep patient history organized
+          in one place. Designed for doctors, radiologists and research teams.
+        </p>
+
+        <div class="hero-stats">
+          <article class="hero-stat-card">
+            <p class="hero-stat-label">Avg. prediction time</p>
+            <p class="hero-stat-value">≤ 10 sec</p>
+            <p class="hero-stat-caption">GPU-optimized model pipeline</p>
+          </article>
+
+          <article class="hero-stat-card">
+            <p class="hero-stat-label">Protected data</p>
+            <p class="hero-stat-value">AES-256</p>
+            <p class="hero-stat-caption">End-to-end encrypted at rest & in transit</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Right: Login form -->
+      <section class="form-panel">
+        <header class="form-header">
+          <h2 class="form-title">Sign in to continue</h2>
+          <p class="form-subtitle">
+            Use your hospital or research account to access the dashboard.
+          </p>
+        </header>
+
+        <form class="form" action="/login" method="post">
+          <div class="field">
+            <label class="field-label" for="email">Email</label>
+            <div class="input-shell">
+              <input
+                class="input"
+                id="email"
+                name="email"
+                type="email"
+                placeholder="doctor@hospital.org"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="field-label" for="password">Password</label>
+            <div class="input-shell">
+              <input
+                class="input"
+                id="password"
+                name="password"
+                type="password"
+                placeholder="••••••••"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="btn-row">
+            <label class="checkbox-row">
+              <input type="checkbox" name="remember" />
+              <span>Keep me signed in on this device</span>
+            </label>
+
+          <a href="#" class="text-link">Forgot password?</a>
+          </div>
+
+          <div class="btn-row" style="margin-top: 14px;">
+            <button class="btn btn-primary" type="submit">
+              Login
+            </button>
+
+            <a class="btn btn-ghost" href="signup.html">
+              Create account
+            </a>
+          </div>
+        </form>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

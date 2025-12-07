@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Brain Tumor Detection – Sign Up</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <main class="surface">
+      <!-- Left hero (can reuse or change text) -->
+      <section class="hero">
+        <div class="hero-tag">
+          <span class="hero-tag-dot"></span>
+          <span>New account onboarding</span>
+        </div>
+
+        <h1 class="hero-title">
+          Add verified
+          <span class="hero-gradient">medical staff & researchers.</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Admin-approved accounts ensure that only authorized professionals can
+          upload scans, review predictions and access patient history.
+        </p>
+
+        <div class="hero-stats">
+          <article class="hero-stat-card">
+            <p class="hero-stat-label">Role-based access</p>
+            <p class="hero-stat-value">3 roles</p>
+            <p class="hero-stat-caption">Doctor, Radiologist, Admin</p>
+          </article>
+
+          <article class="hero-stat-card">
+            <p class="hero-stat-label">Audit logging</p>
+            <p class="hero-stat-value">100%</p>
+            <p class="hero-stat-caption">Every upload & diagnosis is tracked</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Right: Signup form -->
+      <section class="form-panel">
+        <header class="form-header">
+          <h2 class="form-title">Create a clinical account</h2>
+          <p class="form-subtitle">
+            Fill in your professional details and your admin will approve access.
+          </p>
+        </header>
+
+        <form class="form" action="/signup" method="post">
+          <div class="field">
+            <label class="field-label" for="fullName">Full name</label>
+            <div class="input-shell">
+              <input
+                class="input"
+                id="fullName"
+                name="fullName"
+                type="text"
+                placeholder="Dr. Muhammad Azam"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="field-label" for="email">Work email</label>
+            <div class="input-shell">
+              <input
+                class="input"
+                id="email"
+                name="email"
+                type="email"
+                placeholder="name@hospital.org"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="field-label" for="role">Role</label>
+            <div class="input-shell">
+              <select class="input" id="role" name="role" required>
+                <option value="">Select your role</option>
+                <option value="doctor">Doctor</option>
+                <option value="radiologist">Radiologist</option>
+                <option value="researcher">Researcher</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="field-label" for="password">Password</label>
+            <div class="input-shell">
+              <input
+                class="input"
+                id="password"
+                name="password"
+                type="password"
+                placeholder="At least 8 characters"
+                minlength="8"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="field-label" for="confirmPassword">Confirm password</label>
+            <div class="input-shell">
+              <input
+                class="input"
+                id="confirmPassword"
+                name="confirmPassword"
+                type="password"
+                placeholder="Repeat your password"
+                minlength="8"
+                required
+              />
+            </div>
+          </div>
+
+          <label class="checkbox-row">
+            <input type="checkbox" required />
+            <span>
+              I confirm that I am an authorized healthcare professional and agree to
+              the data protection policy.
+            </span>
+          </label>
+
+          <div class="btn-row" style="margin-top: 16px;">
+            <button class="btn btn-primary" type="submit">
+              Submit for approval
+            </button>
+            <a class="btn btn-ghost" href="index.html">Back to login</a>
+          </div>
+        </form>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
