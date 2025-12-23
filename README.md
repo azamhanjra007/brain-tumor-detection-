@@ -1,6 +1,6 @@
 # Brain-Tumor-Detector
 Building a detection model using a convolutional neural network in Tensorflow & Keras.<br>
-Used a brain MRI images data founded on Kaggle. You can find it [here](https://www.kaggle.com/navoneel/brain-mri-images-for-brain-tumor-detection).<br>
+Used a brain MRI images data founded on Kaggle. You can find it.<br>
 
 **About the data:**<br>
 The dataset contains 2 folders: yes and no which contains 253 Brain MRI Images. The folder yes contains 155 Brain MRI Images that are tumorous and the folder no contains 98 Brain MRI Images that are non-tumorous.
@@ -44,7 +44,7 @@ The data was split in the following way:
 
 This is the architecture that I've built:
 
-![Neural Network Architecture](convnet_architecture.jpg)
+
 
 **Understanding the architecture:**<br>
 Each input x (image) has a shape of (240, 240, 3) and is fed into the neural network. And, it goes through the following layers:<br>
@@ -65,13 +65,7 @@ Firstly, I applied transfer learning using a ResNet50 and vgg-16, but these mode
 So why not try a simpler architecture and train it from scratch. And it worked :)
 
 # Training the model
-The model was trained for 24 epochs and these are the loss & accuracy plots:
-
-
-![Loss plot](Loss.PNG)
-
-
-![Accuracy plot](Accuracy.PNG)
+The model was trained for 24 epochs and these are the loss & accuracy plots
 
 The best validation accuracy was achieved on the 23rd iteration.
 
